@@ -14,4 +14,14 @@ export class AppComponent {
   ) {
   }
 
+  playPingPong() {
+    if(this._electronService.isElectronApp) {
+      let pong: string = this._electronService.ipcRenderer.sendSync('ping');
+      console.log(pong);
+    }
+  }
+
+  public beep() {
+    this._electronService.shell.beep();
+  }
 }

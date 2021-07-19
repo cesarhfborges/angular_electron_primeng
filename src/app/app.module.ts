@@ -7,6 +7,9 @@ import {RippleModule} from 'primeng/ripple';
 import {NgxGaugeModule} from "ngx-gauge";
 import {NgxElectronModule} from "ngx-electron";
 import {SharedModule} from "./shared/shared.module";
+import {ButtonModule} from "primeng/button";
+import {CardModule} from 'primeng/card';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +21,9 @@ import {SharedModule} from "./shared/shared.module";
     SharedModule,
     NgxElectronModule,
     RippleModule,
-    NgxGaugeModule
+    NgxGaugeModule,
+    ButtonModule,
+    CardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
